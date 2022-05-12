@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task List
+    </title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="container p-3">
+        <h1 class="app-title" id="header">to do App</h1>
+        <div class="card">
+            <div class="card-header">New Task</div>
+            <div class="card-body">
+                <form id="addTaskForm">
+                    <input type="text" id="txtTaskName" class="form-control" placeholder="Type a new task">
+                    <!--placeholder butonun içinde yazan yazı-->
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" id="buttonAddNewTask">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <!--buraya type="submit" verilmiş ama bence gerek yok sonradan hata verirse eklersin-->
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+        <div class="cardcmt-3">
+            <div class="card-headder">Task List
+                <a href="#" id="btnDeleteAll" class="btn btn-outline-danger btn-sm delete-all float-right">
+                    Delete All</a>
+                <!--delete all'ı tıklamalı yapan href="#"-->
+
+            </div>
+            <ul id="task-list" class="list-group"></ul>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
